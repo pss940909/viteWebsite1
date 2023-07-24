@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+// 字體
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0;
+  }
+}

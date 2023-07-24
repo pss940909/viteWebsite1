@@ -1,4 +1,51 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 80px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .menu {
+    display: flex;
+    li {
+      margin-left: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+
+    .logo {
+      margin-left: 16px;
+    }
+    .menu {
+      flex-wrap: wrap;
+      li {
+        margin-left: 0;
+        width: 50%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid #ffffff;
+        text-align: center;
+        a {
+          width: 100%;
+        }
+      }
+      // 處理重複的border
+      li:nth-child(1),
+      li:nth-child(2) {
+        border-bottom: 0;
+      }
+      li:nth-child(1),
+      li:nth-child(3) {
+        border-right: 0;
+      }
+    }
+  }
 }
