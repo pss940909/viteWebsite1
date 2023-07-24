@@ -1,3 +1,8 @@
+// 顏色
+$white: #ffffff;
+$dark-red: #650300;
+$red: #aa0601;
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +20,12 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// 外層容器
 .container {
   max-width: 1320px;
   margin-left: auto;
