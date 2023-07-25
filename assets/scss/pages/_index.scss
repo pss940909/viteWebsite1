@@ -57,7 +57,7 @@
 
 // 第二區
 .service-bg {
-  background-color: #fbf2f2;
+  background-color: $pink;
   padding-top: 80px;
   padding-bottom: 80px;
   color: $dark-red;
@@ -365,6 +365,59 @@
 
       li:nth-child(3) {
         margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+// 第六區
+
+.contact-form {
+  background-color: $pink;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .contact-sec {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      color: $dark-red;
+      margin-bottom: 48px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+    form {
+      .form-item {
+        margin-bottom: 16px;
+        label {
+          display: block;
+          margin-bottom: 8px;
+        }
+        input {
+          width: 100%;
+          padding: 6px 12px;
+        }
+        textarea {
+          width: 100%;
+          height: 136px;
+        }
+      }
+      .form-submit {
+        width: 65%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-top: 48px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-color: $dark-red;
+        color: $white;
+        text-align: center;
       }
     }
   }
