@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  li {
+    border: 1px solid #555555;
+    border-right: 0;
+    line-height: 48px;
+    text-align: center;
+    width: 42px;
+    a {
+      display: inline-block;
+      width: 100%;
+      color: #555555;
+    }
+    a:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+  li:first-child,
+  li:last-child {
+    width: 81px;
+  }
+  li:last-child {
+    border-right: 1px solid #555555;
+  }
+}
