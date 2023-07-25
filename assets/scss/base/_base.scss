@@ -2,6 +2,7 @@
 $white: #ffffff;
 $dark-red: #650300;
 $red: #aa0601;
+$black: #000000;
 
 * {
   box-sizing: border-box;
@@ -39,11 +40,6 @@ a {
     max-width: 720px;
     padding-right: 12px;
     padding-left: 12px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .container {
-    padding: 0;
+    outline: 3px solid black;
   }
 }
