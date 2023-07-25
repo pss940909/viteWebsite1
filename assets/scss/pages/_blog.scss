@@ -1,0 +1,137 @@
+.blog-sec {
+  padding-top: 96px;
+  padding-bottom: 80px;
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    border-left: 8px solid $red;
+    text-indent: 16px;
+  }
+  .blog-list {
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      .blog-pic {
+        width: 49%;
+      }
+      .blog-content {
+        width: 49%;
+        position: relative;
+        h3 {
+          font-size: 32px;
+          color: $dark-red;
+        }
+        .subtitle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 16px;
+          h4 {
+            font-size: 20px;
+            font-weight: 500;
+          }
+          span {
+            font-weight: 500;
+          }
+        }
+        p {
+          font-size: 20px;
+          color: $dark-gray;
+        }
+        .more {
+          color: $dark-red;
+          font-size: 36px;
+          font-weight: 900;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+    li:last-child {
+      margin-bottom: 136px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-sec {
+    padding-top: 80px;
+    h2 {
+      margin-bottom: 40px;
+    }
+    .blog-list {
+      li {
+        margin-bottom: 24px;
+        .blog-pic {
+          width: 48%;
+        }
+        .blog-content {
+          width: 48%;
+          h3 {
+            font-size: 24px;
+          }
+          .subtitle {
+            margin-bottom: 4px;
+            h4 {
+              font-size: 16px;
+            }
+          }
+          p {
+            font-size: 16px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+          }
+          .more {
+            color: $dark-gray;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+      li:last-child {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .blog-sec {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .blog-list {
+      li {
+        flex-wrap: wrap;
+        .blog-pic {
+          width: 100%;
+          margin-bottom: 8px;
+        }
+        .blog-content {
+          width: 100%;
+          h3 {
+            font-size: 24px;
+          }
+          .subtitle {
+            margin-bottom: 0;
+          }
+          p,
+          .more {
+            display: none;
+          }
+        }
+      }
+      li:last-child {
+        margin-bottom: 64px;
+      }
+    }
+  }
+}
