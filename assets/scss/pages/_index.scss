@@ -131,3 +131,155 @@
 }
 
 // 第三區
+
+.classic-sec {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  h2 {
+    color: $dark-red;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 48px;
+  }
+  .classics {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: 32%;
+      a {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      h3 {
+        font-size: 48px;
+        font-style: italic;
+        font-weight: 900;
+        color: $red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .classic-sec {
+    .classics {
+      li {
+        width: 100%;
+        margin-bottom: 24px;
+        a {
+          margin-right: auto;
+          margin-left: auto;
+          width: 336px;
+        }
+      }
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .classic-sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .classics {
+      li {
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// 第四區
+
+.design-sec {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background-size: cover;
+  background-size: center center;
+  h2 {
+    color: $white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  .brands {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+
+      .brand1 {
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true");
+        height: 240px;
+        background-size: cover;
+        background-position: center center;
+      }
+      .brand2 {
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true");
+        height: 240px;
+        background-size: cover;
+        background-position: center center;
+      }
+      p {
+        background-color: $white;
+        font-size: 48px;
+        font-weight: 900;
+        font-style: italic;
+        color: $red;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .design-sec {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+    .brands {
+      li {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .design-sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .brands {
+      li {
+        .brand1 {
+          background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true");
+        }
+        .brand2 {
+          background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true");
+        }
+      }
+    }
+  }
+}
