@@ -374,10 +374,10 @@
 
 .contact-form {
   background-color: $pink;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 12px;
+
   .contact-sec {
-    width: 50%;
+    max-width: 636px;
     margin-right: auto;
     margin-left: auto;
     h2 {
@@ -408,7 +408,7 @@
         }
       }
       .form-submit {
-        width: 65%;
+        max-width: 416px;
         margin-right: auto;
         margin-left: auto;
         display: block;
@@ -418,6 +418,45 @@
         background-color: $dark-red;
         color: $white;
         text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    .contact-sec {
+      max-width: 576px;
+      h2 {
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+      form {
+        .form-submit {
+          max-width: 336px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .contact-sec {
+      max-width: 348px;
+      h2 {
+        margin-bottom: 24px;
+        font-size: 24px;
+      }
+      form {
+        .form-submit {
+          margin-top: 24px;
+        }
       }
     }
   }
