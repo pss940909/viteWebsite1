@@ -17,6 +17,7 @@ $store-card-border: #00000020;
     label {
       font-size: 24px;
       margin-right: 16px;
+      white-space: nowrap;
     }
     select {
       width: 304px;
@@ -25,16 +26,6 @@ $store-card-border: #00000020;
       font-size: 18px;
       color: #495057;
       text-indent: 12px;
-    }
-    select::after {
-      content: "▼"; /* 使用 ::after 伪元素添加自定义的圖示 */
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      // transform: translateY(-50%);
-      color: black;
-      width: 10px;
-      height: 10px;
     }
   }
   .store-list {
@@ -95,6 +86,60 @@ $store-card-border: #00000020;
     }
     li:nth-child(-n + 3) {
       margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stores-sec {
+    padding-top: 80px;
+    .store-list {
+      li {
+        width: 48%;
+        margin-top: 24px;
+      }
+      li:nth-child(3) {
+        margin-top: 24px;
+      }
+      li:nth-child(3n + 2) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+      li:nth-child(odd) {
+        margin-right: 2%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .stores-sec {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .select-area {
+      margin-bottom: 24px;
+      label {
+        font-size: 16px;
+        margin-right: 8px;
+      }
+      select {
+        max-width: 276px;
+      }
+    }
+    .store-list {
+      li {
+        width: 100%;
+      }
+      li:nth-child(2) {
+        margin-top: 24px;
+      }
+      li:nth-child(odd) {
+        margin-right: 0;
+      }
     }
   }
 }
