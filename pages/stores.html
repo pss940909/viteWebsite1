@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- material icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container stores-sec">
+      <h2>門市據點</h2>
+
+      <label for="area-select">選擇地區</label>
+      <select name="area" id="area-select">
+        <option value="Taipei">台北市</option>
+        <option value="Taichung">台中市</option>
+        <option value="Kaohsiung">高雄市</option>
+      </select>
+
+      <!-- 門市列表 -->
+      <ul class="store-list">
+        <li>
+          <div class="store-img">
+            <img src="" alt="" />
+          </div>
+          <div class="store-info">
+            <p class="store-title">台北中山旗艦店</p>
+            <ul class="details">
+              <li>
+                <span class="material-icons-outlined"> call </span>
+                電話：(02)000-1234
+              </li>
+              <li>
+                <span class="material-icons-outlined"> schedule </span>
+                營業時間：10:00-21:00
+              </li>
+              <li>
+                <span class="material-icons-outlined"> place </span>
+                地址：台北市中山區南京東路25巷2-1號
+              </li>
+            </ul>
+          </div>
+          <a href=""></a>
+        </li>
+      </ul>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

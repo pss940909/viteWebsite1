@@ -1,17 +1,23 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .logo {
-    width: 80px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  .menu {
+header {
+  background-color: $dark-red;
+  .header {
     display: flex;
-    li {
-      margin-left: 64px;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 80px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    .menu {
+      display: flex;
+      li {
+        margin-left: 64px;
+        a {
+          color: $white;
+        }
+      }
     }
   }
 }
