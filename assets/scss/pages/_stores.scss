@@ -1,0 +1,100 @@
+$store-card-border: #00000020;
+
+.stores-sec {
+  padding-top: 96px;
+  padding-bottom: 80px;
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    border-left: 8px solid $dark-red;
+    text-indent: 16px;
+    margin-bottom: 32px;
+  }
+  .select-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    label {
+      font-size: 24px;
+      margin-right: 16px;
+    }
+    select {
+      width: 304px;
+      height: 38px;
+      border: 1px solid #ced4da;
+      font-size: 18px;
+      color: #495057;
+      text-indent: 12px;
+    }
+    select::after {
+      content: "▼"; /* 使用 ::after 伪元素添加自定义的圖示 */
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      // transform: translateY(-50%);
+      color: black;
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .store-list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 32%;
+      margin-top: 48px;
+      .store-img {
+        height: 224px;
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+      .store-info {
+        border-right: 1px solid $store-card-border;
+        border-left: 1px solid $store-card-border;
+        p {
+          border-bottom: 1px solid $store-card-border;
+          font-size: 24px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-left: 24px;
+        }
+        .details {
+          padding: 16px 24px;
+          li {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 20px;
+            span {
+              margin-right: 8px;
+            }
+          }
+          li:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      a {
+        display: block;
+        text-align: center;
+        background-color: $black;
+        color: $white;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 19px;
+      }
+    }
+    li:nth-child(3n + 2) {
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+    li:nth-child(-n + 3) {
+      margin-top: 0;
+    }
+  }
+}
